@@ -1,0 +1,8 @@
+IEnumerator ShowAndFade()
+{
+	canvasGroup.alpha = 1;
+	while(canvasGroup.alpha > 0.01){
+		yield return new WaitForSeconds(0.01f);
+		canvasGroup.alpha -= 0.01f;
+	}
+}

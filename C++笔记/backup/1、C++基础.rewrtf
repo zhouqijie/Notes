@@ -1,0 +1,317 @@
+{\rtf1\ansi\ansicpg936\deff0\nouicompat\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'ba\'da\'cc\'e5;}{\f1\froman\fcharset0 Cambria;}{\f2\froman\fprq2\fcharset0 Times New Roman;}{\f3\fnil\fcharset134 \'cb\'ce\'cc\'e5;}{\f4\fnil\fcharset0 ??;}{\f5\fnil\fcharset1 Segoe UI Symbol;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\nowidctlpar\fi883\sb240\sa60\qc\kerning2\b\f0\fs44\'b5\'da\'d2\'bb\'d5\'c2 C++\'d6\'d0\'b5\'c4\'b7\'fb\'ba\'c5\f1\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\f0\fs36\'d7\'d6\'b7\'fb\'bc\'af\f2\par
+
+\pard\nowidctlpar\qj\kerning2\ulnone\f3\fs21\'d3\'a2\'ce\'c4\'d7\'d6\'c4\'b8\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 A-Z\'a1\'a2a-z\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'ca\'fd\'d7\'d6\'d7\'d6\'b7\'fb\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 0123456789\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'cc\'d8\'ca\'e2\'d7\'d6\'b7\'fb\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'a3\'a1#%\'a1\'ad\'a1\'ad&*_+=-~<>/\f2\rquote\f3\\\f2\rdblquote\f3 ;,.:?()[]\{\}\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'b4\'ca\'b7\'a8\'bc\'c7\'ba\'c5\f2\par
+
+\pard\nowidctlpar\qj\kerning2\ulnone\f3\fs21\'b9\'d8\'bc\'fc\'d7\'d6\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 C++\'d4\'a4\'cf\'c8\'c9\'f9\'c3\'f7\'b5\'c4\'b5\'a5\'b4\'ca\'a1\'a3\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'b1\'ea\'ca\'b6\'b7\'fb\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'b3\'cc\'d0\'f2\'d4\'b1\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'b5\'a5\'b4\'ca\'a1\'a3\f2\par
+\f3 1\'a1\'a2\'d3\'c9\'cf\'c2\'bb\'ae\'cf\'df\'a1\'a2\'ca\'fd\'d7\'d6\'a1\'a2\'d7\'d6\'c4\'b8\'d7\'e9\'b3\'c9\'a1\'a3\f2\par
+\f3 2\'a1\'a2\'d7\'d6\'c4\'b8\'c7\'f8\'b7\'d6\'b4\'f3\'d0\'a1\'d0\'b4\'a1\'a3\f2\par
+\f3 3\'a1\'a2\'d2\'d4\'cf\'c2\'bb\'ae\'cf\'df\'bb\'f2\'d5\'df\'d7\'d6\'c4\'b8\'bf\'aa\'cd\'b7\'a1\'a3\f2\par
+\f3 4\'a1\'a2\'b2\'bb\'c4\'dc\'ca\'c7\'b9\'d8\'bc\'fc\'d7\'d6\'a1\'a3\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'b2\'d9\'d7\'f7\'b7\'fb\'a3\'a8\'d4\'cb\'cb\'e3\'b7\'fb\'a3\'a9\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 +-*/\'b5\'c8\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'b7\'d6\'b8\'f4\'b7\'fb\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 ( ) \{ \} , : ;\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'ce\'c4\'d7\'d6\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'d6\'b1\'bd\'d3\'ca\'b9\'d3\'c3\'b7\'fb\'ba\'c5\'b1\'ed\'ca\'be\'b5\'c4\'ca\'fd\'be\'dd\'a3\'ac\'ca\'fd\'d6\'b5\'a3\'ac\'d7\'d6\'b7\'fb\'a1\'a2\'d7\'d6\'b7\'fb\'b4\'ae\'a1\'a2\'b2\'bc\'b6\'fb\'ce\'c4\'d7\'d6\'b5\'c8\'a1\'a3\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'bf\'d5\'b0\'d7\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'bf\'d5\'b8\'f1\'a1\'a2\'d6\'c6\'b1\'ed\'b7\'fb\'a1\'a2\'bb\'d8\'b3\'b5\'b7\'fb\'a1\'a2\'bb\'bb\'d0\'d0\'b7\'fb\'a1\'a2\'d7\'a2\'ca\'cd\'a1\'a3\f2\par
+
+\pard\widctlpar\page\par
+
+\pard\nowidctlpar\sb240\sa60\qc\b\f0\fs44\'b5\'da\'b6\'fe\'d5\'c2 \'bb\'f9\'b1\'be\'ca\'fd\'be\'dd\'c0\'e0\'d0\'cd\f1\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\f0\fs36\'bb\'f9\'b1\'be\'ca\'fd\'be\'dd\'c0\'e0\'d0\'cd\f2\par
+\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw30\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2893\clbrdrt\brdrw30\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx3773\clbrdrt\brdrw30\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6274 
+\pard\intbl\nowidctlpar\qj\kerning2\ulnone\b0\i\f3\fs21\'c0\'e0\'d0\'cd\'c3\'fb\f2\cell\f3\'b3\'a4\'b6\'c8\f2\cell\f3\'c8\'a1\'d6\'b5\'b7\'b6\'ce\'a7\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx2893\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx3773\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx6274 
+\pard\intbl\nowidctlpar\qj\i0\f3 bool\f2\cell\f3 1\f2\cell\f3 false,true\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx2893\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3773\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3 char\f2\cell\f3 1\f2\cell\f3 -128~127\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx2893\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3773\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3 signed char\f2\cell\f3 1\f2\cell\f3 -128~127\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx2893\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3773\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3 unsigned char\f2\cell\f3 1\f2\cell\f3 0-255\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx2893\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3773\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3 short(signed short)\f2\par
+\f3 unsigned short\f2\cell\f3 2\f2\cell\f3 -32768~32767\f2\par
+\f3 0~65535\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx2893\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3773\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3 int(signed int)\f2\par
+\f3 unsigned int\f2\cell\f3 4\f2\cell\f3 -2147483648~2147483647\f2\par
+\f3 0~4294967295\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx2893\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3773\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3 long(signed long)\f2\par
+\f3 unsigned long\f2\cell\f3 4\f2\cell\f3 -2147483648~2147483647\f2\par
+\f3 0~4294967295\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx2893\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3773\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3 float\f2\cell\f3 4\f2\cell\f3 3.4\f4\'d710^-38 ~3.4\'d710^38\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs \cellx2893\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3773\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3 double\f2\cell\f3 8\f2\cell\f3 1.7\f4\'d710^308 ~1.7\'d710^-308\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw30\brdrs\brdrcf2 \cellx2893\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw30\brdrs\brdrcf2 \cellx3773\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw30\brdrs\brdrcf2 \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3 long double\f2\cell\f3 8\f2\cell\f3 1.7\f4\'d710^308 ~1.7\'d710^-308\f2\cell\row 
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'b3\'a3\'c1\'bf\f2\par
+
+\pard\nowidctlpar\qj\kerning2\ulnone\f3\fs21\'d5\'fb\'d0\'cd\'b3\'a3\'c1\'bf\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'c0\'fd\'c8\'e7999\'a1\'a2-999\'a1\'a2999l\'a1\'a2999u\'a1\'a3\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'ca\'b5\'d0\'cd\'b3\'a3\'c1\'bf\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'c0\'fd\'c8\'e799.9\'a1\'a2-99.9\'a1\'a299.9f\'a1\'a3\f2\par
+\f3\'ca\'b5\'d0\'cd\'b3\'a3\'c1\'bf\'c4\'ac\'c8\'cfdouble\'d0\'cd\'a3\'ac\'bc\'d3\'ba\'f3\'d7\'baf\'bf\'c9\'d2\'d4\'ca\'b9\'c6\'e4\'b3\'c6\'ce\'aafloat\'d0\'cd\'a1\'a3\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'d7\'d6\'b7\'fb\'b3\'a3\'c1\'bf\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'a1\'f9\'b0\'fc\'ba\'ac\'d2\'bb\'b0\'e3\'d7\'d6\'b7\'fb\'ba\'cd\'b2\'bb\'bf\'c9\'cf\'d4\'ca\'be\'d7\'d6\'b7\'fb\'a1\'a3\f2\par
+\f3\'a1\'f9ASCII\'b1\'ed\'ca\'be\'b7\'a8\'a3\'ba\\<\'b0\'cb\'bd\'f8\'d6\'c6\'ca\'fd>\'bb\'f2\'d5\'df\\x<\'ca\'ae\'c1\'f9\'bd\'f8\'d6\'c6\'ca\'fd>\'a3\'ac\'d2\'bb\'b0\'e3\'d7\'d6\'b7\'fb\'ba\'cd\'b2\'bb\'bf\'c9\'cf\'d4\'ca\'be\'d7\'d6\'b7\'fb\'b6\'bc\'ca\'ca\'d3\'c3\'a1\'a3\f2\par
+\f3\'a1\'f9\'d7\'aa\'d2\'e5\'d0\'f2\'c1\'d0\'a3\'ba\f2\par
+\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrt\brdrw30\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2210\clbrdrt\brdrw30\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx4170\clbrdrt\brdrw30\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6274 
+\pard\intbl\nowidctlpar\qj\i\f3\'b2\'bb\'bf\'c9\'cf\'d4\'ca\'be\'d7\'d6\'b7\'fb\f2\cell\f3\'d7\'d6\'b7\'fb\'b3\'a3\'c1\'bf\'d0\'ce\'ca\'bd\f2\cell\f3 ASCII\'ca\'ae\'c1\'f9\'bd\'f8\'d6\'c6\'d0\'ce\'ca\'bd\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2 \cellx2210\cellx4540\cellx6274 
+\pard\intbl\nowidctlpar\qj\i0\f3\'cf\'ec\'c1\'e5\f2\cell\f3\\a\f2\cell\f3\\x07\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2 \cellx2210\cellx4540\cellx6274 
+\pard\intbl\nowidctlpar\qj\f3\'bb\'bb\'d0\'d0\f2\cell\f3\\n\f2\cell\f3\\x0A\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2 \cellx2210\cellx4540\cellx6274 
+\pard\intbl\nowidctlpar\qj\f3\'cb\'ae\'c6\'bd\'d6\'c6\'b1\'ed\'b7\'fb\f2\cell\f3\\t\f2\cell\f3\\x09\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2 \cellx2210\cellx4540\cellx6274 
+\pard\intbl\nowidctlpar\qj\f3\'b4\'b9\'d6\'b1\'d6\'c6\'b1\'ed\'b7\'fb\f2\cell\f3\\v\f2\cell\f3\\x0B\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2 \cellx2210\cellx4540\cellx6274 
+\pard\intbl\nowidctlpar\qj\f3\'cd\'cb\'b8\'f1\f2\cell\f3\\b\f2\cell\f3\\x08\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2 \cellx2210\cellx4540\cellx6274 
+\pard\intbl\nowidctlpar\qj\f3\'bb\'d8\'b3\'b5\f2\cell\f3\\r\f2\cell\f3\\x0D\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2 \cellx2210\cellx4540\cellx6274 
+\pard\intbl\nowidctlpar\qj\f3\'bb\'bb\'d2\'b3\f2\cell\f3\\v\f2\cell\f3\\x0C\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2 \cellx2210\cellx4540\cellx6274 
+\pard\intbl\nowidctlpar\qj\f3\'d7\'d6\'b7\'fb\f2\lquote\f3\\\f2\rquote\cell\f3\\\\\f2\cell\f3\\x5C\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2 \cellx2210\cellx4540\cellx6274 
+\pard\intbl\nowidctlpar\qj\f3\'cb\'ab\'d2\'fd\'ba\'c5\f2\cell\f3\\\f2\rdblquote\cell\f3\\x22\f2\cell\row\trowd\trgaph10\trleft-118\trqc\trbrdrt\brdrs\brdrw30\brdrcf2 \trbrdrb\brdrs\brdrw30\brdrcf2 \trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw30\brdrs\brdrcf2 \cellx2210\clbrdrb\brdrw30\brdrs\brdrcf2 \cellx4540\clbrdrb\brdrw30\brdrs\brdrcf2 \cellx6274 
+\pard\intbl\nowidctlpar\qj\f3\'b5\'a5\'d2\'fd\'ba\'c5\f2\cell\f3\\\f2\rquote\cell\f3\\x27\f2\cell\row 
+\pard\nowidctlpar\qj\b\par
+\f3\'d7\'d6\'b7\'fb\'b4\'ae\'b3\'a3\'c1\'bf\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'a1\'f9\'d2\'bb\'d7\'e9\'d3\'c3\'cb\'ab\'d2\'fd\'ba\'c5\'c0\'a8\'c6\'f0\'c0\'b4\'b5\'c4\'d7\'d6\'b7\'fb\'d0\'f2\'c1\'d0\'a1\'a3\f2\par
+\f3\'a1\'f9\'d4\'da\'c4\'da\'b4\'e6\'d6\'d0\'b4\'e6\'b7\'c5\'d0\'ce\'ca\'bd\'ca\'c7\'a3\'ba\'d7\'d6\'b7\'fb\'b0\'b4\'b4\'ce\'d0\'f2\'b4\'e6\'b7\'c5\'a3\'ac\'c3\'bf\'b8\'f6\'d7\'d6\'b7\'fb\'d5\'bc\'d2\'bb\'b8\'f6\'d7\'d6\'bd\'da\'a3\'ac\'c4\'a9\'ce\'b2\'cc\'ed\'bc\'d3\f2\rdblquote\f3\\0\f2\rdblquote\f3\'bd\'e1\'ce\'b2\'a1\'a3\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'b2\'bc\'b6\'fb\'b3\'a3\'c1\'bf\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'a1\'f9true\'ba\'cdfalse\'a1\'a3\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'b1\'e4\'c1\'bf\f2\par
+
+\pard\nowidctlpar\qj\kerning2\ulnone\f3\fs21\'b1\'e4\'c1\'bf\'c9\'f9\'c3\'f7\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'a1\'f9\'d7\'a2\'a3\'ba\'c9\'f9\'c3\'f7\'b1\'e4\'c1\'bf\'b2\'bb\'d2\'bb\'b6\'a8\'b7\'d6\'c5\'e4\'c4\'da\'b4\'e6\'a3\'ac\'d6\'bb\'ca\'c7\'c8\'c3\'b1\'e0\'d2\'eb\'c6\'f7\ldblquote\'c8\'cf\'ca\'b6\rdblquote\'d5\'e2\'b8\'f6\'b1\'ea\'ca\'b6\'b7\'fb\'a1\'a3\f2\par
+\f3 int num;\f2\par
+\f3 float a,b,c;\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'b1\'e4\'c1\'bf\'b6\'a8\'d2\'e5\'a3\'ba\b0\f2\par
+
+\pard\nowidctlpar\fi420\qj\f3\'a1\'f9\'d7\'a2\'a3\'ba\'b6\'a8\'d2\'e5\'b1\'e4\'c1\'bf\'d2\'e2\'ce\'b6\'d7\'c5\'b8\'f8\'b1\'e4\'c1\'bf\'b7\'d6\'c5\'e4\'c4\'da\'b4\'e6\'bf\'d5\'bc\'e4\'a1\'a3\f2\par
+\f3\'a1\'f9\'d7\'a2\'a3\'ba\'b6\'a8\'d2\'e5\'b1\'e4\'c1\'bf\'b5\'c4\'cd\'ac\'ca\'b1\'a3\'ac\'bf\'c9\'d2\'d4\'b8\'f8\'cb\'fc\'b8\'b3\'b3\'f5\'ca\'bc\'d6\'b5\'a3\'ac\'b3\'c6\'ce\'aa\'b3\'f5\'ca\'bc\'bb\'af\'a1\'a3\'ca\'b5\'d6\'ca\'ca\'c7\'b8\'f8\'c4\'da\'b4\'e6\'b5\'a5\'d4\'aa\'b8\'b3\'d6\'b5\'a1\'a3\f2\par
+\f3 int num =3;(\'bb\'f2\'d5\'df int num(3);)\f2\par
+\f3 char c = \f2\lquote\f3 a\f2\rquote\f3 ;\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'a1\'f9\'b1\'e4\'c1\'bf\'b5\'c4\'b4\'e6\'b4\'a2\'c0\'e0\'d0\'cd\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'a1\'f9auto\'a1\'a2register\'a1\'a2extern\'a1\'a2static\f2\par
+
+\pard\nowidctlpar\qj\cf1\b\f3\'a1\'f9\'c3\'bb\'d3\'d0\'d7\'d6\'b7\'fb\'b4\'ae\'b1\'e4\'c1\'bf\'a1\'a3C#\'d6\'d0string\'ca\'c7String\'c0\'e0\'b5\'c4\'d3\'ef\'b7\'a8\'cc\'c7\'a1\'a3\cf0\b0\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'a1\'f9\'b3\'a3\'b1\'e4\'c1\'bf\'a3\'a8\'b7\'fb\'ba\'c5\'b3\'a3\'c1\'bf\'a3\'a9\par
+
+\pard\nowidctlpar\s1\ulnone\f3\lang2052\'ba\'ea\'b3\'a3\'c1\'bf\'a3\'ba\par
+
+\pard\nowidctlpar\s1\li300\kerning2\b0\fs24\lang1033\'a1\'f9\lang2052\'d3\'c3\f2\lang1033 #define\f3\lang2052\'b6\'a8\'d2\'e5\'ba\'ea\'b3\'a3\'c1\'bf\'a3\'ba\f2\lang1033 #define \f3\lang2052\'b3\'a3\'c1\'bf\'c3\'fb \'b3\'a3\'c1\'bf\'d6\'b5  \f2\lang1033 (\f3\lang2052\'ca\'be\'c0\'fd\'a3\'ba\f2\lang1033 #define day 7)\f3\fs21\lang2052\par
+
+\pard\nowidctlpar\s1\kerning44\b\fs36\lang1033 const\lang2052\'b3\'a3\'c1\'bf\lang1033\par
+
+\pard\nowidctlpar\fi300\kerning2\b0\fs24\'a1\'f9\f2 const\f3\'b7\'fb\'ba\'c5\'b3\'a3\'c1\'bf\'c9\'f9\'c3\'f7\'a3\'ba const \'c0\'e0\'d0\'cd\'c3\'fb \'b3\'a3\'b1\'e4\'c1\'bf\'c3\'fb = \'b3\'a3\'c1\'bf\'d6\'b5 \lang2052\'a3\'a8\'ca\'be\'c0\'fd \f2\lang1033 int day = 7;\f3\lang2052\'a3\'a9\lang1033\par
+\'a1\'f9\f2 const\f3\'b7\'fb\'ba\'c5\'b3\'a3\'c1\'bf\'cc\'e1\'b8\'df\'b3\'cc\'d0\'f2\'bf\'c9\'b6\'c1\'d0\'d4\'a1\'a3\par
+
+\pard\nowidctlpar\uldb\b\f0\fs40\lang2052\'d7\'f3\'d6\'b5\'ba\'cd\'d3\'d2\'d6\'b5\par
+\ulnone\f3\fs32\'d7\'f3\'d6\'b5\'a3\'ba\par
+
+\pard\nowidctlpar\fi300\b0\f5\fs24\u11088?\f3\'bc\'c8\'c4\'dc\'b3\'f6\'cf\'d6\'d4\'da\'b8\'b3\'d6\'b5\'b1\'ed\'b4\'ef\'ca\'bd\'d3\'d2\'b1\'df\'d2\'b2\'c4\'dc\'b3\'f6\'cf\'d6\'d4\'da\'b8\'b3\'d6\'b5\'b1\'ed\'b4\'ef\'ca\'bd\'d7\'f3\'b1\'df\'b5\'c4\'d6\'b5\'bb\'f2\'b1\'ed\'b4\'ef\'ca\'bd\'a1\'a3\par
+\f5\u11088?\f3\'d7\'f3\'d6\'b5\'d4\'da\'c4\'da\'b4\'e6\'d6\'d0\'d3\'d0\'b5\'d8\'d6\'b7\'a1\'a3\par
+
+\pard\nowidctlpar\b\fs32\'d3\'d2\'d6\'b5\'a3\'ba\par
+
+\pard\nowidctlpar\fi300\b0\f5\fs24\u11088?\f3\'d6\'bb\'c4\'dc\'b3\'f6\'cf\'d6\'d4\'da\'b8\'b3\'d6\'b5\'b1\'ed\'b4\'ef\'ca\'bd\'d3\'d2\'b1\'df\'b5\'c4\'d6\'b5\'bb\'f2\'b1\'ed\'b4\'ef\'ca\'bd\'a1\'a3\par
+\f5\u11088?\f3\'d3\'d2\'d6\'b5\'d4\'da\'c4\'da\'b4\'e6\'d6\'d0\'c3\'bb\'d3\'d0\'b5\'d8\'d6\'b7\'a3\'ac\'ca\'c7\'b1\'ed\'b4\'ef\'ca\'bd\'bd\'e1\'ca\'f8\'d2\'d4\'ba\'f3\'be\'cd\'b2\'bb\'b4\'e6\'d4\'da\'b5\'c4\'c1\'d9\'ca\'b1\'d6\'b5\'a1\'a3\lang1033\par
+\f2\fs21\par
+
+\pard\nowidctlpar\sb240\sa60\qc\b\f0\fs44\'b5\'da\'c8\'fd\'d5\'c2 \'ca\'fd\'be\'dd\'c0\'e0\'d0\'cd\'d7\'aa\'bb\'bb\f1\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\f0\fs36\'d2\'fe\'ca\'bd\'d7\'aa\'bb\'bb\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'f9\'b1\'e0\'d2\'eb\'cf\'b5\'cd\'b3\'d7\'d4\'b6\'af\'b6\'d4\'ca\'fd\'be\'dd\'b5\'c4\'d7\'aa\'bb\'bb\'b3\'c6\'ce\'aa\'d2\'fe\'ca\'bd\'d7\'aa\'bb\'bb\'a1\'a3\f2\par
+\f3\'a1\'f9\'d2\'fe\'ca\'bd\'d7\'aa\'bb\'bb\'ca\'c7\'b0\'b2\'c8\'ab\'b5\'c4\'a1\'a3\'ca\'fd\'be\'dd\'d3\'c9\'b5\'cd\'c0\'e0\'d0\'cd\'ca\'fd\'be\'dd\'d7\'aa\'bb\'bb\'ce\'aa\'b8\'df\'c0\'e0\'d0\'cd\'ca\'fd\'be\'dd\'a3\'ac\'c3\'bb\'d3\'d0\'be\'ab\'b6\'c8\'cb\'f0\'ca\'a7\'a1\'a3\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'b8\'df\'b5\'cd\'cb\'b3\'d0\'f2\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'b5\'cd > char > short > int > unsigned int > long > unsigned long > float > double > \'b8\'df\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'cf\'d4\'ca\'bd\'d7\'aa\'bb\'bb\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'f9\'b1\'e0\'d2\'eb\'cf\'b5\'cd\'b3\'d7\'d4\'b6\'af\'b6\'d4\'ca\'fd\'be\'dd\'b5\'c4\'d7\'aa\'bb\'bb\'b3\'c6\'ce\'aa\'d2\'fe\'ca\'bd\'d7\'aa\'bb\'bb\'a1\'a3\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'b8\'f1\'ca\'bd\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 (\'c0\'e0\'d0\'cd\'c3\'fb)\'b1\'ed\'b4\'ef\'ca\'bd\f2\par
+\cf1\f3\'c0\'e0\'d0\'cd\'c3\'fb(\'b1\'ed\'b4\'ef\'ca\'bd)\f2\par
+
+\pard\nowidctlpar\qj\cf0\b\f3\'a1\'f9\'c0\'e0\'d0\'cd\'d7\'aa\'bb\'bb\'b2\'d9\'d7\'f7\'b7\'fb\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 const_cast<\'c0\'e0\'d0\'cd\'c3\'fb>(\'b1\'ed\'b4\'ef\'ca\'bd)\f2\par
+\f3 dynamic_cast<\'c0\'e0\'d0\'cd\'c3\'fb>(\'b1\'ed\'b4\'ef\'ca\'bd)\f2\par
+\f3 reinterpret_cast<\'c0\'e0\'d0\'cd\'c3\'fb>(\'b1\'ed\'b4\'ef\'ca\'bd) \f2\par
+\f3 static_cast<\'c0\'e0\'d0\'cd\'c3\'fb>(\'b1\'ed\'b4\'ef\'ca\'bd) \f2\par
+
+\pard\nowidctlpar\qj\cf1\b\f3\'a1\'f9\'b2\'b9\'b3\'e4\'a3\'ba\b0  \f2\par
+
+\pard\nowidctlpar\fi420\qj\f3\'a1\'f9\'d4\'daC#\'d0\'c2\'d4\'f6\'c1\'cbas\'b9\'d8\'bc\'fc\'d7\'d6\'ba\'cdConvert\'c0\'e0\'d3\'c3\'d3\'da\'d7\'aa\'bb\'bb\'ca\'fd\'be\'dd\'a1\'a3\f2\par
+\cf0\page\par
+
+\pard\nowidctlpar\sb240\sa60\qc\b\f0\fs44\'b5\'da\'cb\'c4\'d5\'c2 \'d4\'cb\'cb\'e3\'b7\'fb\'d3\'eb\'b1\'ed\'b4\'ef\'ca\'bd\f1\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\f0\fs36\'b8\'c5\'ca\'f6\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'f9\'b0\'b4\'b2\'d9\'d7\'f7\'ca\'fd\'a3\'ba\'d2\'bb\'d4\'aa(\'b5\'a5\'c4\'bf)\'d4\'cb\'cb\'e3\'b7\'fb\'a1\'a2\'b6\'fe\'d4\'aa(\'b6\'fe\'c4\'bf)\'d4\'cb\'cb\'e3\'b7\'fb\'a1\'a2\'c8\'fd\'d4\'aa(\'c8\'fd\'c4\'bf)\'d4\'cb\'cb\'e3\'b7\'fb\'a1\'a3\f2\par
+\f3\'a1\'f9\'b0\'b4\'c0\'e0\'d0\'cd\'a3\'ba\'cb\'e3\'ca\'f5\'d4\'cb\'cb\'e3\'b7\'fb\'a1\'a2\'b9\'d8\'cf\'b5\'d4\'cb\'cb\'e3\'b7\'fb\'a1\'a2\'c2\'df\'bc\'ad\'d4\'cb\'cb\'e3\'b7\'fb\'b5\'c8\'a1\'a3\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'cb\'e3\'ca\'f5\'d4\'cb\'cb\'e3\'b7\'fb\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'f9\'bb\'f9\'b1\'be\'d4\'cb\'cb\'e3\'b7\'fb\'a3\'ba\f2\rdblquote\f3 +\f2\rdblquote\f3\'a1\'a2\f2\rdblquote\f3 -\f2\ldblquote\f3\'a1\'a2\f2\rdblquote\f3 *\f2\rdblquote\f3\'a1\'a2\f2\rdblquote\f3 /\f2\rdblquote\f3\'a1\'a2\f2\rdblquote\f3 %\f2\rdblquote\f3\'a3\'a8\'bc\'d3\'bc\'f5\'b3\'cb\'b3\'fd\'d3\'e0\'a3\'a9\'a1\'a3\f2\par
+\f3\'a1\'f9\'d7\'d4\'d4\'f6\'d7\'d4\'bc\'f5\'d4\'cb\'cb\'e3\'b7\'fb\'a3\'ba\f2\rdblquote\f3 ++\f2\rdblquote\f3\'a1\'a2\f2\rdblquote\f3 - -\f2\ldblquote\f3\'a3\'a8\'b7\'d6\'c7\'b0\'d6\'c3\'ba\'cd\'ba\'f3\'d6\'c3\'a3\'a9\'a1\'a3\f2\par
+\f3\'a1\'f9\'cb\'e3\'ca\'f5\'b1\'ed\'b4\'ef\'ca\'bd\'a3\'ba\'cb\'e3\'ca\'f5\'b1\'ed\'b4\'ef\'ca\'bd\'b5\'c4\'d6\'b5\'b5\'b1\'c7\'b0\'d6\'c3/\'ba\'f3\'d6\'c3\'ca\'b1\'b2\'bb\'d2\'bb\'d1\'f9\'a1\'a3\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'b8\'b3\'d6\'b5\'d4\'cb\'cb\'e3\'b7\'fb\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'f9\'bb\'f9\'b1\'be\'b5\'c4\'b8\'b3\'d6\'b5\'d4\'cb\'cb\'e3\'b7\'fb\'a3\'ba\f2\rdblquote\f3 =\f2\rdblquote\f3\'a1\'a3\f2\par
+\f3\'a1\'f9\'b8\'b4\'ba\'cf\'b5\'c4\'b8\'b3\'d6\'b5\'d4\'cb\'cb\'e3\'b7\'fb\'a3\'ba\f2\rdblquote\f3 +=\f2\rdblquote\f3\'a1\'a2\rdblquote -=\f2\rdblquote\f3\'a1\'a2\rdblquote *=\f2\rdblquote\f3\'a1\'a2\rdblquote /=\f2\rdblquote\f3\'a1\'a2\rdblquote %=\f2\rdblquote\f3\'a1\'a3\f2\par
+\f3\'a1\'f9\'b8\'b3\'d6\'b5\'b1\'ed\'b4\'ef\'ca\'bd\'a3\'ba\'b1\'ed\'b4\'ef\'ca\'bd\'c0\'e0\'d0\'cd\'ce\'aa\'b5\'c8\'ba\'c5\'d7\'f3\'b1\'df\'b6\'d4\'cf\'f3\'b5\'c4\'c0\'e0\'d0\'cd\'a3\'ac\'d6\'b5\'ce\'aa\'b5\'c8\'ba\'c5\'d7\'f3\'b1\'df\'b1\'bb\'b8\'b3\'d6\'b5\'ba\'f3\'b5\'c4\'d6\'b5\'a1\'a3\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'c2\'df\'bc\'ad\'d4\'cb\'cb\'e3\'b7\'fb\'d3\'eb\'b9\'d8\'cf\'b5\'d4\'cb\'cb\'e3\'b7\'fb\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'f9\'c2\'df\'bc\'ad\'d4\'cb\'cb\'e3\'b7\'fb\'a3\'ba\f2\rdblquote\f3 >\f2\rdblquote\f3\'a1\'a2\f2\rdblquote\f3 <\f2\rdblquote\f3\'a1\'a2\f2\rdblquote\f3 >=\f2\rdblquote\f3\'a1\'a2\f2\rdblquote\f3 <=\f2\rdblquote\f3\'a1\'a3\'a3\'a8\'b8\'df\'d3\'c5\'cf\'c8\'bc\'b6\'a3\'a9\'a1\'a3\rdblquote = =\f2\rdblquote\f3\'a1\'a2\f2\rdblquote\f3 !=\f2\rdblquote\f3\'a1\'a3\'a3\'a8\'b5\'cd\'d3\'c5\'cf\'c8\'bc\'b6\'a3\'a9\f2\par
+\f3\'a1\'f9\'b9\'d8\'cf\'b5\'d4\'cb\'cb\'e3\'b7\'fb\'a3\'ba\f2\rdblquote\f3 !\f2\rdblquote\f3 (\'b8\'df\'d3\'c5\'cf\'c8\'bc\'b6)\'a1\'a2\f2\rdblquote\f3 &&\f2\rdblquote\f3\'a3\'a8\'d6\'d0\'d3\'c5\'cf\'c8\'bc\'b6\'a3\'a9\'a1\'a2\rdblquote ||\f2\rdblquote\f3 (\'b5\'cd\'d3\'c5\'cf\'c8\'bc\'b6)\'a1\'a3\f2\par
+\f3\'a1\'f9\'c2\'df\'bc\'ad\'b1\'ed\'b4\'ef\'ca\'bd\'a3\'ba\'d6\'b5\'ce\'aabool\'c0\'e0\'d0\'cd\'a3\'ac\'b9\'d8\'cf\'b5\'b1\'ed\'b4\'ef\'ca\'bd\'ca\'c7\'d2\'bb\'d6\'d6\'d7\'ee\'bc\'f2\'b5\'a5\'b5\'c4\'c2\'df\'bc\'ad\'b1\'ed\'b4\'ef\'ca\'bd\'a1\'a3\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'cc\'f5\'bc\'fe\'d4\'cb\'cb\'e3\'b7\'fb\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'f9\'cc\'f5\'bc\'fe\'d4\'cb\'cb\'e3\'b7\'fb\f2\rdblquote\f3 ?\f2\rdblquote\f3\'ca\'c7C++\'ce\'a8\'d2\'bb\'b5\'c4\'c8\'fd\'c4\'bf\'d4\'cb\'cb\'e3\'b7\'fb\'a1\'a3\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36 sizeof\'d4\'cb\'cb\'e3\'b7\'fb\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'f9\'b8\'f1\'ca\'bd1\'a3\'basizeof (\'c0\'e0\'d0\'cd\'c3\'fb)  \f2\par
+\f3\'a1\'f9\'b8\'f1\'ca\'bd2\'a3\'ba sizeof \'b1\'ed\'b4\'ef\'ca\'bd \f2 / sizeof(\f3\lang2052\'b1\'ed\'b4\'ef\'ca\'bd\f2\lang1033 )\par
+\f3\'a1\'f9\'d6\'b5\'ce\'aa\'d6\'b8\'b6\'a8\'b5\'c4\'c0\'e0\'d0\'cd\'bb\'f2\'d5\'df\'b1\'ed\'b4\'ef\'ca\'bd\'bd\'e1\'b9\'fb\'b5\'c4\'c0\'e0\'d0\'cd\'cb\'f9\'d5\'bc\'d7\'d6\'bd\'da\'ca\'fd\'a1\'a3\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'ce\'bb\'d4\'cb\'cb\'e3\'b7\'fb\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'f9\'b0\'b4\'ce\'bb\'d3\'eb\'a3\'ba\f2\rdblquote\f3 &\f2\rdblquote\par
+\f3\'a1\'f9\'b0\'b4\'ce\'bb\'bb\'f2\'a3\'ba\f2\rdblquote\f3 |\f2\rdblquote\par
+\f3\'a1\'f9\'b0\'b4\'ce\'bb\'d2\'ec\'bb\'f2\'a3\'ba\f2\rdblquote\f3  ^ \f2\rdblquote\f3  \f2\par
+\f3\'a1\'f9\'b0\'b4\'ce\'bb\'c8\'a1\'b7\'b4\'a3\'ba\f2\rdblquote\f3 ~\f2\rdblquote\par
+\f3\'a1\'f9\'d2\'c6\'ce\'bb\'a3\'ba\f2\rdblquote\f3 <<\f2\rdblquote\f3\\\f2\rdblquote\f3 >>\f2\rdblquote\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'b6\'ba\'ba\'c5\'d4\'cb\'cb\'e3\'b7\'fb\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'a1\'ef\'b6\'ba\'ba\'c5\'d4\'cb\'cb\'e3\'b7\'fb\'d3\'c5\'cf\'c8\'bc\'b6\'ca\'c7\'d7\'ee\'b5\'cd\'b5\'c4\'a1\'a3\f2\par
+\f3\'a1\'f9\'b6\'ba\'ba\'c5\'b1\'ed\'b4\'ef\'ca\'bd\'a3\'ba\'b6\'ba\'ba\'c5\'b1\'ed\'b4\'ef\'ca\'bd\'d6\'b5\'ce\'aa\'cf\'b5\'c1\'d0\'d6\'d0\'d7\'ee\'ba\'f3\'d2\'bb\'b8\'f6\'b1\'ed\'b4\'ef\'ca\'bd\'b5\'c4\'d6\'b5\'a1\'a3\f2\par
+
+\pard\widctlpar\page\par
+
+\pard\nowidctlpar\sb240\sa60\qc\b\f0\fs44\'b5\'da\'ce\'e5\'d5\'c2 \'c1\'f7\'b3\'cc\'bf\'d8\'d6\'c6\'d3\'ef\'be\'e4\f1\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\f0\fs36\'bb\'f9\'b1\'be\'bf\'d8\'d6\'c6\'bd\'e1\'b9\'b9\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21\'cb\'e3\'b7\'a8\'b5\'c4\'bb\'f9\'b1\'be\'bf\'d8\'d6\'c6\'bd\'e1\'b9\'b9\'d3\'d0\'c8\'fd\'d6\'d6\'a3\'ba\'cb\'b3\'d0\'f2\'bd\'e1\'b9\'b9\'a1\'a2\'d1\'a1\'d4\'f1\'bd\'e1\'b9\'b9\'a1\'a2\'d1\'ad\'bb\'b7\'bd\'e1\'b9\'b9\'a1\'a3\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'d1\'a1\'d4\'f1\'bd\'e1\'b9\'b9\f2\par
+
+\pard\nowidctlpar\qj\kerning2\ulnone\f3\fs21 if\'d3\'ef\'be\'e4\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'a1\'f9if\'ca\'c7\'d7\'a8\'c3\'c5\'d3\'c3\'c0\'b4\'ca\'b5\'cf\'d6\'d1\'a1\'d4\'f1\'bd\'e1\'b9\'b9\'b5\'c4\'d3\'ef\'be\'e4\'a1\'a3\f2\par
+
+\pard\nowidctlpar\qj\b\f3 else if\'d3\'ef\'be\'e4\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'a1\'f9else if\'bf\'c9\'d2\'d4\'ca\'b5\'cf\'d6\'b6\'e0\'d6\'d8\'d1\'a1\'d4\'f1\'bd\'e1\'b9\'b9\'a1\'a3\f2\par
+\f3 if()\f2\par
+\f3\{\f2\'85\'85\f3 ;\} \f2\par
+\f3 else if()\f2\par
+\f3\{\f2\'85\'85\f3 ;\}\f2\par
+\f3 else\f2\par
+\f3\{\f2\'85\'85\f3 ; \}\f2\par
+
+\pard\nowidctlpar\qj\b\f3 switch\'d3\'ef\'be\'e4\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3\'a1\'f9switch\'d2\'b2\'bf\'c9\'d2\'d4\'ca\'b5\'cf\'d6\'b6\'e0\'d6\'d8\'d1\'a1\'d4\'f1\'bd\'e1\'b9\'b9\'a1\'a3 \f2\par
+\f3 switch(day)\f2\par
+\f3\{\f2\par
+\f3\tab case 0 :\f2\par
+\f3\tab\tab\f2\'85\'85\f3 ;\f2\par
+\f3\tab\tab break;\f2\par
+\f3\tab\f2\'85\'85\par
+\f3\tab default:\f2\par
+\f3\tab\tab\f2\'85\'85\f3 ;\f2\par
+\f3\tab\tab break;\f2\par
+\f3\}\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'d1\'ad\'bb\'b7\'bd\'e1\'b9\'b9\f2\par
+
+\pard\nowidctlpar\qj\kerning2\ulnone\f3\fs21 while\'d3\'ef\'be\'e4\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 while()\{\f2\'85\'85\f3 ;\}\f2\par
+
+\pard\nowidctlpar\qj\b\f3 do while\'d3\'ef\'be\'e4\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 do\{\f2\'85\'85\f3 ;\}while();\f2\par
+
+\pard\nowidctlpar\qj\b\f3\'a3\'a8\'b3\'a3\'d3\'c3\'a3\'a9for\'d3\'ef\'be\'e4\'a3\'ba\f2\par
+
+\pard\nowidctlpar\fi420\qj\b0\f3 for(\f2\'85\f3  ;\f2\'85\f3  ;\f2\'85\f3  );\f2\par
+
+\pard\nowidctlpar\s1\qj\kerning44\uldb\b\f0\fs36\'a1\'f9\'c6\'e4\'cb\'fb\'bf\'d8\'d6\'c6\'d3\'ef\'be\'e4\f2\par
+
+\pard\nowidctlpar\fi420\qj\kerning2\ulnone\b0\f3\fs21 break:\'cc\'f8\'b3\'f6\'d1\'ad\'bb\'b7\'a1\'a3\f2\par
+\f3 continue:\'bd\'e1\'ca\'f8\'b1\'be\'b4\'ce\'d1\'ad\'bb\'b7\'a1\'a3\f2\par
+\f3 goto(\'b2\'bb\'bd\'a8\'d2\'e9\'ca\'b9\'d3\'c3)\'a3\'bagoto \'d3\'ef\'be\'e4\'b1\'ea\'ba\'c5\'a1\'a3\f2\par
+
+\pard\kerning0\f3\fs18\lang2052\par
+}

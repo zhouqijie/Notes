@@ -1,0 +1,39 @@
+实现代码的延时执行，可以用Invoke、Coroutine实现，还可以借助DOTween这款插件实现延时执行。
+
+一：用DOTween.To实现延时：
+
+	/// <summary>
+    /// DOTweenTo延时回调
+    /// </summary>
+    /// <param name="delayedTimer">延时的时间</param>
+    /// <param name="loopTimes">循环次数，0:不循环；负数：无限循环；正数：循环多少次</param>
+    public void DOTweenToTest(float delayedTimer, int loopTimes)
+    {
+        float timer = 0;
+        //DOTwwen.To()中参数：前两个参数是固定写法，第三个是到达的最终值，第四个是渐变过程所用的时间
+        Tween t = DOTween.To(() => timer, x => timer = x, 1, delayedTimer)
+                      .OnStepComplete(() =>
+                      {
+                          print("996，oh yeah!");
+                      })
+                      .SetLoops(loopTimes);        
+    }
+
+
+二：队列，用DOTween.Sequence实现延时：
+
+	/// <summary>
+    /// DOTween.Sequence延时回调
+    /// </summary>
+    /// <param name="delayedTimer">延时的时间</param>
+    /// <param name="loopTimes">循环次数，0:不循环；负数：无限循环；正数：循环多少次</param>
+    public void DOTweenSequenceTest(float delayedTimer, ref int loopTimes)
+    {
+        Sequence seq = DOTween.Sequence();
+        seq.AppendCallback(() =>
+        {
+            print("yeah");
+        })
+        .SetDelay(delayedTimer)
+        .SetLoops(loopTimes);
+    }

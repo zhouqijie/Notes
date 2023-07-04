@@ -1,0 +1,48 @@
+***********************文件信息***********************
+struct _finddata_t fileinfo;  //很少用的文件信息读取结构
+
+**********************遍历文件和文件夹***************
+包含头文件：
+（头文件：io.h）
+
+预定义变量：
+long long  handle = 0;//文件句柄  
+struct _finddata_t fileinfo;  //文件信息结构
+
+查找第一个：
+handle = _findfirst(p.assign(path).append("\\*").c_str(), &fileinfo)  //功能是搜索与指定的文件名称匹配的第一个实例，若成功则返回第一个实例的句柄，否则返回-1。
+
+查找下一个：
+_findnext(handle, &fileinfo)  ;  	//寻找下一个，成功返回0，否则-1。
+
+关闭句柄：
+_findclose(handle);                         //关闭句柄 
+			//FindClose用于释放由FindFirst分配的内存，可以停止一个FindFirst/FindNext序列。
+			//Creedon:文件句柄类似C++语言的流(streams)。不关闭句柄文件会处于被访问状态，不能被删除。
+
+***********************文件夹判断***********************
+if ((fileinfo.attrib &  _A_SUBDIR))  //可以判断是否为文件夹
+
+
+
+************************代码示例**********************
+void getAllFiles(std::string path, regex flag, vector<string>& files)
+{
+	long long  hFile = 0;
+	struct _finddata_t fileinfo;
+	string p;
+
+	if ((hFile = _findfirst(p.assign(path).append("\\*").c_str(), &fileinfo)) != -1)
+	{
+		do
+		{
+			if (regex_search(fileinfo.name, flag))
+			{
+				//files.push_back(p.assign(path).append("/").append(fileinfo.name));//文件名	
+				files.push_back(fileinfo.name);
+			}
+		} while (_findnext(hFile, &fileinfo) == 0);
+		_findclose(hFile);
+	}
+	sort(files.begin(), files.end());
+}

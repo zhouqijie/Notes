@@ -1,0 +1,118 @@
+#######################Ckeditor5 Classic
+ 
+
+前端代码:
+<script>
+
+ClassicEditor
+           .create(document.querySelector('#A_CONTENT'), {
+               // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+               language: 'zh-cn',
+               ckfinder:
+               {
+                   uploadUrl : '/Publish/UploadImage'
+               }
+           })
+           .then(editor =>
+           {
+               window.editor = editor;
+           })
+           .catch(err =>
+           {
+               console.error(err.stack);
+           });
+
+</script>
+
+后端代码:
+//处理图片上传
+       [HttpPost]
+       public JsonResult UploadImage()
+       {
+           var files = Request.Files;
+           if (files.Count == 0)
+           {
+               var objError = new { uploaded = false, url = string.Empty };
+               return Json(objError);
+           }
+
+           var file = files[0];
+           var fileName = file.FileName;
+           var guidName = Guid.NewGuid() + System.IO.Path.GetExtension(fileName);
+           var saveDir = Server.MapPath(@"~/Images/ArticleImages/");
+           var previewPath = "/Images/ArticleImages/" + guidName;
+           
+
+           bool result = true;
+           try
+           {
+               file.SaveAs(saveDir + guidName);
+           }
+           catch
+           {
+               result = false;
+           }
+
+           var obj = new { uploaded = result, url = result ? previewPath : string.Empty };
+           return Json(obj);
+       }
+
+
+
+#######################wangEditor
+
+前端：
+
+<textarea id="A_CONTENT" name="A_CONTENT" />
+<div id="editor"></div>
+<script type="text/javascript">
+
+const E = window.wangEditor
+const editor = new E('#editor')
+const $text1 = $('#A_CONTENT')
+editor.config.uploadImgServer = '/Publish/UploadImage'
+editor.config.onchange = function (html)
+{
+//监控变化，同步更新到 textarea
+$text1.val(html)
+}
+editor.create()
+
+//初始化 editor 的值
+editor.txt.html($text1.val())
+
+</script>
+
+
+后端：
+
+//处理图片上传
+[HttpPost]
+public JsonResult UploadImage()
+{
+int errCount = 0;
+var files = Request.Files;
+List<string> listOfPreviewPath = new List<string>();
+for(int i = 0; i < files.Count; i++)
+{
+var file = files[i];
+var fileName = file.FileName;
+var guidName = Guid.NewGuid() + System.IO.Path.GetExtension(fileName);
+var saveDir = Server.MapPath(@"~/Images/ArticleImages/");
+var previewPath = "/Images/ArticleImages/" + guidName;
+
+try
+{
+file.SaveAs(saveDir + guidName);
+}
+catch
+{
+errCount++;
+}
+listOfPreviewPath.Add(previewPath);
+}
+
+
+var obj = new { errno = errCount, data = listOfPreviewPath.ToArray() };
+return Json(obj);
+}

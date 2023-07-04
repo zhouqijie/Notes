@@ -1,0 +1,10 @@
+void Update () {
+	if(Input.GetKeyDown(KeyCode.N)){
+		if(this.GetComponent<Animation>().isPlaying){
+			this.GetComponent<Animation>().Stop();
+		}
+		this.GetComponent<Animation>().Play();
+	}
+}
+
+//this必须有个动画组件。

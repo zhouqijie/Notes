@@ -1,0 +1,21 @@
+using System.Xml.Serializateion;
+
+public static string SerializeToString (object obj)
+	{
+		XmlSerializer serializer = new XmlSerializer (obj.GetType ());
+ 
+		using (StringWriter writer = new StringWriter()) {
+			serializer.Serialize (writer, obj);
+ 
+			return writer.ToString ();
+		}
+	}
+ 
+	public static T SerializeFromString<T> (string xml)
+	{
+		XmlSerializer serializer = new XmlSerializer (typeof(T));
+  
+		using (StringReader reader = new StringReader(xml)) {
+			return (T)serializer.Deserialize (reader);
+		}
+	}

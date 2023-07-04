@@ -1,0 +1,10 @@
+通用：
+Environment.CurrentDirectory
+AppDomain.CurrentDomain.BaseDirectory
+
+Web应用程序：
+Server.MapPath()
+
+WinForm：
+Application.StartupPath
+

@@ -1,0 +1,5 @@
+可以用Select(lambda)吧List<TEntity>转换为IEnumerable<SelectListItem>类型。
+
+例如：
+
+IEnumerable<SelectListItem> selectlist = list_type.Select(x => new SelectListItem { Text = x.T_NAME, Value = x.T_ID.ToString() });

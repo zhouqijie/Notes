@@ -1,0 +1,5 @@
+
+通常用一个动作方法和视图就可以完成验证。
+用HttpGet和HttpPost分别实现页面获得和页面回发提交。
+验证信息：ModelState.
+验证控件：ValidationMessage()、ValidationSummary()

@@ -1,0 +1,41 @@
+继承System.Web.Mvc.**AuthorizeAttribute** 类
+
+
+重写方法：**AuthorizeCore()**（验证的逻辑处理，验证通过则返回true）
+
+（可选）重写：**HandleUnauthorizedRequest()**（授权验证失败的处理）
+
+
+例：
+
+```C#
+
+public class MyAuthorize:AuthorizeAttribute
+
+{
+	
+	protected override bool AuthorizeCore(HttpContextBase httpContext)
+	
+	{
+		
+		if(httpContext.User.Identity.Name ==  “张三”)
+		
+		{
+			
+			return true;		
+		}
+
+		else
+
+		{
+			
+			return false;
+		
+		}
+	
+	}
+
+}
+
+```
+

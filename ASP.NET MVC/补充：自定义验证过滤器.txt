@@ -1,0 +1,5 @@
+
+不一定要用MVC默认的Authorize授权验证规则，规则可以自己来定，自定义授权过滤器可以继承AuthorizeAttribute这个类，这个类里面有两个方法是要重写的：
+
+bool AuthorizeCore(HttpContextBase httpContext)：这里主要是授权验证的逻辑处理，返回true的则是通过授权，返回了false则不是。
+void HandleUnauthorizedRequest(AuthorizationContext filterContext)：这个方法是处理授权失败的事情。

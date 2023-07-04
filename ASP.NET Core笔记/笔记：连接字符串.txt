@@ -1,0 +1,19 @@
+﻿获取配置文件中的连接字符串：
+传统ASP.NET:
+引入System.Web.Configuration命名空间，用WebConfigurationManager.ConnectionStrings[]获取。
+Core和控制台应用:
+引入System.Configuration命名空间，用ConfigurationManager.ConnectionStrings[]获取。
+
+---------------------------------------------------------------------------------------------------------------------------
+Server == Data Source                      （推荐用DataSource）
+
+database == Initial Catalog           
+---------------------------------------------------------------------------------------------------------------------------
+如何指向App_Data文件夹：
+        string connstr = "Data Source=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\MyDB.MDF;Integrated Security=True";
+
+注意：
+		在App_Data中新建数据库属于的服务器可在“工具”-->“选项”-->“数据连接”查看。
+		字符串中的“|DataDirectory|”代表App_Data文件夹。
+
+---------------------------------------------------------------------------------------------------------------------------
