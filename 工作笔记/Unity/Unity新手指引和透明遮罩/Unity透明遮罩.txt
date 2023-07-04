@@ -1,0 +1,59 @@
+# 一、透明遮罩效果实现：
+
+## 方法一：
+遮罩使用UI材质，修改Stencil和Color Mask属性。
+
+## 方法二：
+Shader实现。
+
+## 方法三：
+继承MaskableGraphic自己绘制图形顶点，配合ICanvasRaycastFilter 。（较复杂）
+
+
+
+
+
+
+
+
+
+
+# 二、透明遮罩射线穿透实现：
+
+## 穿透方法一：
+public class MaskPassEvent : MonoBehaviour, IPointerClickHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
+{
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        //判断。。。
+        PassEvent(eventData, ExecuteEvents.pointerClickHandler);
+    }
+
+    //穿透
+    public void PassEvent<T>(PointerEventData data, ExecuteEvents.EventFunction<T> function)
+        where T : IEventSystemHandler
+    {
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(data, results);
+        GameObject current = data.pointerCurrentRaycast.gameObject;
+        for (int i = 0; i < results.Count; i++)
+        {
+            if (current != results[i].gameObject)
+            {
+                ExecuteEvents.Execute(results[i].gameObject, data, function);
+                //break;//break to only execute one;
+            }
+        }
+    }
+}
+
+
+## 穿透方法一：
+public class AlphaButtonClickMask : MonoBehaviour, ICanvasRaycastFilter 
+{
+
+    public bool IsRaycastLocationValid(Vector2 sp, Camera eventCamera)
+    {
+        //判断。。。
+    }
+}

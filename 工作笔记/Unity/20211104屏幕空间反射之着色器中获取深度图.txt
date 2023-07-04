@@ -1,0 +1,9 @@
+```HLSL
+fixed4 scrnCoord = ComputeScreenPos(UnityWorldToClipPos(fixed4(p, 1)));
+float cD = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(scrnCoord)));
+```
+
+> 该_CameraDepthTexture 是UNITY为我们自动返回的一个深度值。
+> _CameraDepthTexture 在延迟渲染中是可以直接得到的，而在前向渲染中我们需要给摄像机加脚本允许UNITY获得深度值才可以使用_CameraDepthTexture。
+
+> https://zhuanlan.zhihu.com/p/191560629

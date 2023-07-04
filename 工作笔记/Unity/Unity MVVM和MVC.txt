@@ -1,0 +1,16 @@
+
+# 一、MVVM框架  
+
+> https://blog.csdn.net/ys5773477/article/details/52795933
+> https://gameinstitute.qq.com/community/detail/127332
+
+## 双向绑定：  
+
+- ViewModel绑定View:  
+
+通过ViewModel的BindableProperty<>字段的onChange事件来调用View中定义的响应函数实现绑定。   
+
+- View绑定ViewModel：  
+
+通过在View 中定义一个OnUIElementValueChanged响应函数，当UI控件的数据改变时，在响应函数中就数据同步到ViewModel 中。  
+
