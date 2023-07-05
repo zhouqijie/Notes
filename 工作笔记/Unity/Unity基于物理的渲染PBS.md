@@ -101,6 +101,8 @@ $f_{spec} = {{F(l,h)G(l,v,h)D(h)} \over {4(n·l)(n·v)}}$
 
 ## ※Unity使用的PBS实现：  
 
+{% raw %}
+
 - **漫反射：**  
 $f_{diff}(l,v)={baseColor \over \pi}(1 +(F_{D90} - 1)(1-n·l)^5)(1 + (F_{D90} - 1)( 1 - n·v)^5)$   
 
@@ -116,5 +118,6 @@ $G(l,v,h) = {{1} \over {((n·l)(1 - k) + k)((n·v)(1 - k) + k)}}$
 $F(l,h) = F_0 + (1 - F_0)(1 - l·h)^5$  
 （$F_0$即高光反射系数，即高光反射颜色）  
 
+{% endraw %}
 
 ( The End )
