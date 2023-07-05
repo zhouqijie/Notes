@@ -184,7 +184,15 @@ struct IncrementByDeltaTimeJob: IJobParallelFor
 <br />  
 
 
+# 补充    
 
+> CRE：NativeContainer不用互相赋值，可以用CopyFrom或者Copy方法。    
+> CRE：CopyFrom方法在PC和Android可能实现不同，因为有时PC上正常执行而在Android上会报Blittable相关的错误。尝试使用Copy方法。        
+
+<br />  
+<br />  
+<br />  
+<br />  
 
 
 # 参考资料    
