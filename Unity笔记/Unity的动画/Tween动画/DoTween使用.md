@@ -190,6 +190,13 @@ DOTween.Sequence().Append(
               );
 ```
 
+
+# 注意事项    
+
+Dotween.To()和Sequence都不能通过Dokill来终止，必须通过Kill方法终止。    
+
+
+
 # Reference  
 
 > https://gameinstitute.qq.com/community/detail/116463

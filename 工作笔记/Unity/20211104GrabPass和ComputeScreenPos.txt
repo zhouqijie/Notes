@@ -1,9 +1,0 @@
-# ComputeGrabScreenPos函数  
-
-ComputeGrabScreenPos()  参数是裁剪空间坐标。  
-
-ComputeScreenPos()  返回的值是齐次坐标系下的屏幕坐标值，其范围为[0, w]  
-
-> ComputeScreenPos的作用机制： 参考https://blog.csdn.net/linuxheik/article/details/86691117  
-
-

@@ -1,9 +1,0 @@
-# DOTween使用注意事项
-
-1. 一般的动画可以用transform.DOComplete()或transform.DOKill()来完成或终止所有引用了transform的动画。 
-
-2. DOTween.To() 这种方式创建的动作无法用DoKill()停止，必须用Tween.Kill()终止。
-
-3. Sequence的Loop和Tweener的Loop机制不一样。
-
-4. Sequence的无限循环需要调用Kill()方法来终止。DoKill()无效。

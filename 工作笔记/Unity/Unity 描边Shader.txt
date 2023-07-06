@@ -1,3 +1,0 @@
-https://blog.csdn.net/puppet_master/article/details/54000951
-
-使用shader或者后处理。
