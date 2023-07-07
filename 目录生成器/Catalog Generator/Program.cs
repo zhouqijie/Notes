@@ -81,29 +81,6 @@ namespace Catalog_Generator
             }
 
 
-            // ITEM:  FILES  
-            foreach (var f in dir.GetFiles())
-            {
-                if (f.Name.Contains("--目录--")) continue;
-                if (f.Name.Contains("index.md")) continue;
-                if ((f.Attributes & FileAttributes.Hidden) == FileAttributes.Hidden) continue;
-
-                string fNameNoExtension = f.Name.Substring(0, (f.Name.Length - f.Extension.Length));
-                
-                switch(f.Extension)
-                {
-                    case ".md":
-                        {
-                            string name = fNameNoExtension; name = name.Replace(" ", " ");
-                            string relaPath = ".\\" + fNameNoExtension;
-                            writer.WriteLine("[" + name + "](" + relaPath + ")  \n");
-                        }
-                        break;
-                    default:
-                        break;
-                }
-            }
-
 
             // ITEM:  CHILD DIRS  
             foreach (var childDir in dir.GetDirectories())
@@ -113,11 +90,34 @@ namespace Catalog_Generator
                 string name = childDir.Name; name = name.Replace(" ", " ");
                 string relaPath = ".\\" + name + "\\--目录--" + name;
 
-                writer.WriteLine("[" + name + "](" + relaPath + ")  \n");
+                writer.WriteLine("[📁" + name + "](" + relaPath + ")  \n");
 
                 GenCatalogHere(childDir);
             }
 
+
+            // ITEM:  FILES  
+            foreach (var f in dir.GetFiles())
+            {
+                if (f.Name.Contains("--目录--")) continue;
+                if (f.Name.Contains("index.md")) continue;
+                if ((f.Attributes & FileAttributes.Hidden) == FileAttributes.Hidden) continue;
+
+                string fNameNoExtension = f.Name.Substring(0, (f.Name.Length - f.Extension.Length));
+
+                switch (f.Extension)
+                {
+                    case ".md":
+                        {
+                            string name = fNameNoExtension; name = name.Replace(" ", " ");
+                            string relaPath = ".\\" + fNameNoExtension;
+                            writer.WriteLine("[📜" + name + "](" + relaPath + ")  \n");
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
 
 
             writer.WriteLine("\n\n\n\n\n\n> " + System.DateTime.Now.ToString());
