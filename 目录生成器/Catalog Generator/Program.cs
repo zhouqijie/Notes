@@ -92,7 +92,7 @@ namespace Catalog_Generator
             {
                 if(dir.Parent.FullName == root.FullName)
                 {
-                    writer.WriteLine(ReplaceSeperator("[👈【返回】](/--目录--/--目录--root.md)  \n\n"));
+                    writer.WriteLine(ReplaceSeperator("[👈【返回】](/--目录--/--目录--root)  \n\n"));
                 }
                 else
                 {
@@ -110,8 +110,8 @@ namespace Catalog_Generator
                 if ((childDir.Attributes & FileAttributes.Hidden) == FileAttributes.Hidden) continue;
 
                 string dirName = childDir.Name; dirName = dirName.Replace(" ", " ");
-                string catalogDir = MapToCatalogPath(childDir); Console.WriteLine("\ncatalogdir:" + catalogDir);
-                string relativeCatalogDir = GetRelativePath(catalogDir); Console.WriteLine("\nrelativecatalogdir:" + relativeCatalogDir);
+                string catalogDir = MapToCatalogPath(childDir); //Console.WriteLine("\ncatalogdir:" + catalogDir);
+                string relativeCatalogDir = GetRelativePath(catalogDir); //Console.WriteLine("\nrelativecatalogdir:" + relativeCatalogDir);
                 string relaPath = ReplaceSeperator(relativeCatalogDir + "\\--目录--" + dirName + "");//no ".md" extension in jekyll  
 
                 writer.WriteLine("[📁" + dirName + "](" + relaPath + ")  \n");
