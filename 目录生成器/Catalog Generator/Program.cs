@@ -96,7 +96,7 @@ namespace Catalog_Generator
                 }
                 else
                 {
-                    writer.WriteLine(ReplaceSeperator("[👈【返回】](" + "/--目录--" + ReplaceSeperator(GetRelativePath(dir.Parent.FullName)) + ")  \n\n"));
+                    writer.WriteLine(ReplaceSeperator("[👈【返回】](" + ReplaceSeperator(GetRelativePath(MapToCatalogPath(dir.Parent)) + "\\--目录--" + dir.Parent.Name) + ")  \n\n"));
                 }
             }
 
