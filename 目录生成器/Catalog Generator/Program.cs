@@ -15,68 +15,88 @@ namespace Catalog_Generator
 
         static void Main(string[] args)
         {
-            Console.WriteLine("请输入笔记根目录：");
+            Console.WriteLine("输入操作：(d)删除所有目录/(g)生成目录");
 
+            string op = Console.ReadLine();
+
+            Console.WriteLine("请输入笔记根目录：");
             string path = Console.ReadLine();
-            if(!Directory.Exists(path))
+            if (path == "")
+            {
+                path = @"F:\Legacy\------笔记本-----";
+            }
+
+            if (!Directory.Exists(path))
             {
                 Console.WriteLine("Path Not Exist");
                 return;
             }
-
             root = new DirectoryInfo(path);
-            GenCatalogHere(root);
+
+
+            if (op == "d")
+            {
+                DeleteAllCatalog(root);
+            }
+            else if(op == "g")
+            {
+                GenCatalogAtDir(root, true);
+            }
         }
 
-        static void GenCatalogHere(DirectoryInfo dir)
+        static void DeleteAllCatalog(DirectoryInfo dir)
         {
-            //清楚旧的目录  
-            foreach(var f in dir.GetFiles())
+            foreach(var file in dir.GetFiles())
             {
-                if(f.Name.Contains("--目录--"))
+                if(file.Name.Contains("--目录--"))
                 {
-                    File.Delete(f.FullName);
-                    Console.WriteLine("删除旧目录:" + f.Name);
+                    File.Delete(file.FullName);
+                    Console.WriteLine("已删除目录：" + file.FullName);
                 }
             }
 
+            foreach(var child in dir.GetDirectories())
+            {
+                DeleteAllCatalog(child);
+            }
+        }
+
+        static void GenCatalogAtDir(DirectoryInfo dir, bool isRoot = false)
+        {
+            //目录  
+            string mapDir = MapToCatalogPath(dir); 
+            if(!Directory.Exists(mapDir))
+            {
+                Directory.CreateDirectory(mapDir);
+            }
 
             //文件名  
-            string catelogFullName;
-            bool isRoot = (dir == root);
-            if (isRoot)
-                catelogFullName = root.FullName + "\\index.md";
+            string catalogName;
+            if (isRoot == false)
+                catalogName = "--目录--" + dir.Name + ".md";
             else
-                catelogFullName = dir.FullName + "\\--目录--" + dir.Name + ".md";
+                catalogName = "--目录--root.md";
+            
+            string catalogFullName = mapDir + "\\" + catalogName;
+
 
             //开始写入  
             StringWriter writer = new StringWriter();
 
             //TITLE  
-            if(isRoot)
-            {
-                writer.WriteLine("# 目录  \n\n");
-            }
-            else
-            {
-                writer.WriteLine("# 目录  \n\n");
-            }
-            
+            writer.WriteLine("# 目录  \n\n");
+
 
             // LINK: RETURN  
-            if(isRoot)
-            {
-                writer.WriteLine("> --zqj  \n\n");
-            }
-            else
+            if( isRoot == false)
             {
                 if(dir.Parent.FullName == root.FullName)
                 {
-                    writer.WriteLine("[👈【返回】](" + "..\\index" + ")  \n\n");
+                    writer.WriteLine(ReplaceSeperator("[👈【返回】](/--目录--/--目录--root.md)  \n\n"));
                 }
                 else
                 {
-                    writer.WriteLine("[👈【返回】](" + "..\\--目录--" + dir.Parent.Name + ")  \n\n");
+                    writer.WriteLine(ReplaceSeperator("[👈【返回】](" + "/--目录--" + ReplaceSeperator(GetRelativePath(dir.Parent.FullName)) + ")  \n\n"));
                 }
             }
 
@@ -85,14 +105,19 @@ namespace Catalog_Generator
             // ITEM:  CHILD DIRS  
             foreach (var childDir in dir.GetDirectories())
             {
+                if (childDir.Name.Contains("目录")) continue;
+                if (childDir.Name.Contains("Images")) continue;
                 if ((childDir.Attributes & FileAttributes.Hidden) == FileAttributes.Hidden) continue;
 
-                string name = childDir.Name; name = name.Replace(" ", " ");
-                string relaPath = ".\\" + name + "\\--目录--" + name;
+                string dirName = childDir.Name; dirName = dirName.Replace(" ", " ");
+                string catalogDir = MapToCatalogPath(childDir); Console.WriteLine("\ncatalogdir:" + catalogDir);
+                string relativeCatalogDir = GetRelativePath(catalogDir); Console.WriteLine("\nrelativecatalogdir:" + relativeCatalogDir);
+                string relaPath = ReplaceSeperator(relativeCatalogDir + "\\--目录--" + dirName + "");//no ".md" extension in jekyll  
 
-                writer.WriteLine("[📁" + name + "](" + relaPath + ")  \n");
+                writer.WriteLine("[📁" + dirName + "](" + relaPath + ")  \n");
 
-                GenCatalogHere(childDir);
+                //递归遍历子目录
+                GenCatalogAtDir(childDir);
             }
 
 
@@ -110,8 +135,9 @@ namespace Catalog_Generator
                     case ".md":
                         {
                             string name = fNameNoExtension; name = name.Replace(" ", " ");
-                            string relaPath = ".\\" + fNameNoExtension;
-                            writer.WriteLine("[📜" + name + "](" + relaPath + ")  \n");
+                            string fullNameNoExtension = f.FullName.Substring(0, (f.FullName.Length - f.Extension.Length));//no ".md" extension in jekyll  
+                            string relaPath = GetRelativePath(fullNameNoExtension);  
+                            writer.WriteLine("[📜" + name + "](" + ReplaceSeperator(relaPath) + ")  \n");
                         }
                         break;
                     default:
@@ -123,10 +149,41 @@ namespace Catalog_Generator
             writer.WriteLine("\n\n\n\n\n\n> " + System.DateTime.Now.ToString());
             writer.Flush();
 
-            File.WriteAllText(catelogFullName, writer.ToString());
+            File.WriteAllText(catalogFullName, writer.ToString());
             writer.Dispose();
 
-            Console.WriteLine("建立目录:" + catelogFullName);
+            Console.WriteLine("建立目录:" + catalogFullName);
+        }
+
+
+        static string MapToCatalogPath(DirectoryInfo dir)
+        {
+            string path = dir.FullName;
+            string relaPath = GetRelativePath(path);
+
+            if (dir.FullName != root.FullName)
+            {
+                return root.FullName + "\\--目录--" + relaPath; ;
+            }
+            else
+            {
+                return root.FullName + "\\--目录--";
+            }
+        }
+
+        static string GetRelativePath(string path)
+        {
+            string rootPath = root.FullName;
+
+            if (path == rootPath)
+                return "\\";
+            else
+                return "\\" + path.Substring(rootPath.Length + 1);
+        }
+
+        static string ReplaceSeperator(string path)
+        {
+            return path.Replace('\\', '/');
         }
     }
 }
