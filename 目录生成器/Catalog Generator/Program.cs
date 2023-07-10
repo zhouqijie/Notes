@@ -140,6 +140,14 @@ namespace Catalog_Generator
                             writer.WriteLine("[📜" + name + "](" + ReplaceSeperator(relaPath) + ")  \n");
                         }
                         break;
+                    case ".txt":
+                        {
+                            string name = fNameNoExtension; name = name.Replace(" ", " ");
+                            string fullNameNoExtension = f.FullName.Substring(0, (f.FullName.Length - f.Extension.Length));//no ".md" extension in jekyll  
+                            string relaPath = GetRelativePath(fullNameNoExtension);
+                            writer.WriteLine("[📜" + name + "](" + ReplaceSeperator(relaPath) + ".txt)  \n");
+                        }
+                        break;
                     default:
                         break;
                 }
