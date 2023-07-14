@@ -69,6 +69,11 @@ public class SetupViewModel : ViewModel
 
 
 
+### 把数据的请求和处理放在ViewModel中    
+
+CRE：数据请求和响应回调处理函数放在ViewModel中，在View逻辑里面就可以直接调用这些函数。    
+
+
 # 参考文章    
 
 > https://blog.csdn.net/ys5773477/article/details/52795933  
