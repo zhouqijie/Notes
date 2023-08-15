@@ -40,21 +40,12 @@ CheckBox：
 
 
 
-# 二、可序列化字段的自定义编辑：  
+# 二、GUIStyle    
 
-> Attribute:   `[UnityEditor.CustomPropertyDrawer(typeof(TestClass))`    
-> 继承：`UnityEditor.PropertyDrawer`  
+> CRE：`GUILayout`的调用可以使用GUIStyle参数，或者传入字符串引用Editor自带的GUIStyle。    
+> CRE：编辑器自带的GUIStyle在`GUI.skin.customStyles`中。一部分效果如图所示。    
 
-### 可重载函数：
-- 重载`OnGUI(Rect position, SerializedProperty property, GUIContent label)` （ 使用EditorGUI.BeginProperty(position, label, property);以及EditorGUI.EndProperty();）
-- 重载`GetPropertyHeight(SerializedProperty property, GUIContent label)`
-
-
-### 对象的成员字段：  
-
-`SerializedProperty intTestp = property.FindPropertyRelative("intTest");`    
-`intTestp.intValue = 999;`    
-
+<img src="Images/Skins.png" />  
 
 
 
@@ -62,9 +53,6 @@ CheckBox：
 <br />
 <br />
 <br />
-
-
-
 
 # 编辑器下执行脚本ExecuteInEditMode
 
