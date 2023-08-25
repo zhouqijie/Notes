@@ -7,31 +7,94 @@
 > Task的异常会抛送给task.Result或者task.Wait()方法处。    
 
 
-### 创建Task并执行    
+## 创建Task并执行    
+
+
+- 使用线程池的任务    
 
 ```C#  
-Task task = new Task(Foo);
-task.Start();//冷任务
-
-//或者
-Task.Run();//热任务  (.net 4.5)
+var tf = new TaskFactory();
+Task t1 = tf.StartNew(Foo, "工厂StartNew方法");
+Task t2 = Task.Factory.StartNew(Foo, "工厂StartNew静态方法");
+Task t3 = new Task(Foo, "使用Task构造函数");    t3.Start();//冷任务
+Task t4 = Task.Run(() => Foo("使用Run方法"));//热任务  (.net 4.5)
 ```  
+
+
+
+- 同步任务    
+
+任务也可以同步运行:    
+```C#  
+Task t1 = new Task(Foo, "同步运行");
+t1.RunSynchronously();
+```  
+
+
+- 使用单独线程    
+
+如果任务的代码将长时间运行，就应该使用`TaskCreationOptions.LongRunning`告诉任务调度器创建一个新线程，而不是使用线程池中的线程。    
+
+```C#  
+var t1 = new Task(Foo, "long running", TaskCreationOptions.LongRunning);
+t1.Start();
+```
+
+## 任务的结果    
+
+当任务结束时，它可以把一些有用的状态信息写入到线程安全的共享对象。另一个选项是使用将来会返回一个结果的任务，在早期版本的*TaskParallelLibary(TPL)*的类名为`Future`，现在它是Task类的一个泛型版本（CRE:`Task<>`），可以定义任务返回的结果类型。    
+
+```C#  
+public static Tuple<int,int> Foo(int arg)
+{//...
+};
+public static void Test()
+{
+    var t1 = new Task<Tuple<int,int>>(Foo, 2333);
+    t1.Start();
+}
+```
+
+- **`Wait()`方法**    
 
 调用`Wait()`方法会进行阻塞直到操作完成，相当于thread的`Join()`方法。    
 
+- **`Task.Result`**    
 
-### Task.Result    
+从Task返回一个结果值，访问Result属性时，task如果没有完成则会阻塞线程直到完成。    
 
-> 从Task返回一个结果值，访问Result属性时，task如果没有完成则会阻塞线程直到完成。    
 
-### Task.ContinueWith    
+## 任务的连续    
+
+通过任务，可以指定在任务完成后，应该运行另一个特定任务。例如如果前一个任务失败了，这个任务就应该执行一些清理工作。    
+
+- **`Task.ContinueWith**    
 
 > 使用awaiter对象，或者使用Task.ContinueWith方法。(.NET4以上)    
 
 ```C#  
-Task<int> t1 = new Task<int>(Foo); t1.Start();
-Task t2 = t.ContinueWith(t => t.Console.WriteLine(t.Result));//在原task的线程上继续执行。  
-```  
+private static void First(){}
+private static void Second(Task task){}
+
+public static void Test()
+{
+    Task t1 = new Task(First);
+    Task t2 = t1.ContinueWith(Second);
+    Task t3 = t1.ContinueWith(t => Second(t));
+    Task t4 = t2.ContinueWith(Second);
+    t1.Start();
+}
+```
+
+## 任务的层次结构    
+
+一个任务启动一个新任务时，就启动了一个父子层次结构。创建子任务的代码与创建父任务的代码相同，唯一的区别是这个任务从另一个任务内部创建。    
+
+如果父任务在子任务之前结束，父任务的状态就显示为`WaitingForChildrenToComplete`。所有的子任务也结束时，父任务的状态就变成`RanToCompletion`。    
+
+取消父任务，也会取消子任务。    
+
+
 
 <br />  
 <br />  
@@ -58,6 +121,13 @@ awaiter.OnComplete(() => {
     Console.WriteLine(result);  
 });
 ```  
+
+
+## CancellationTokenSource        
+
+创建`CancellationTokenSource`实例并传入其Token到Task，即可请求任务的取消。    
+
+
 
 
 
@@ -99,6 +169,24 @@ awaiter.OnComplete(() => {
 ```  
 
 
+
+## 数据流    
+
+Task和Parallel为数据并行提供了很多帮助，但是这些类不能直接支持数据流的处理，需要使用*TPL Data Flow*。    
+
+- 数据块    
+
+数据块可以是源，也可以是目标，还可以是源和目标。    
+
+`ActionBlock`是一个目标块，所以实现了`ITargetBlock`接口。    
+
+`BufferBlock`同时作为数据源和数据目标，它实现了`ITargetBlock`和`ISourceBlock`。    
+
+> CRE：使用`Post()`方法向数据块发送数据。    
+
+
+
+
 <br />  
 <br />  
 <br />  
@@ -119,6 +207,12 @@ awaiter.OnComplete(() => {
 1. I/O-Bound和ComputeBound操作建议用异步编写。  
 2. 执行超过50毫秒的操作用异步编写。    
 3. 粒度要适中。    
+
+
+- **示例**  
+
+<img src="Images/异步编程示例1.png" />  
+
 
 
 <br />
