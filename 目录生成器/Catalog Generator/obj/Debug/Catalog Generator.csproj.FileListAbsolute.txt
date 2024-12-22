@@ -1,7 +1,7 @@
 F:\Legacy\------笔记本-----\目录生成器\Catalog Generator\bin\Debug\Catalog Generator.exe.config
 F:\Legacy\------笔记本-----\目录生成器\Catalog Generator\bin\Debug\Catalog Generator.exe
 F:\Legacy\------笔记本-----\目录生成器\Catalog Generator\bin\Debug\Catalog Generator.pdb
-F:\Legacy\------笔记本-----\目录生成器\Catalog Generator\obj\Debug\Catalog Generator.csprojAssemblyReference.cache
 F:\Legacy\------笔记本-----\目录生成器\Catalog Generator\obj\Debug\Catalog Generator.csproj.CoreCompileInputs.cache
 F:\Legacy\------笔记本-----\目录生成器\Catalog Generator\obj\Debug\Catalog Generator.exe
 F:\Legacy\------笔记本-----\目录生成器\Catalog Generator\obj\Debug\Catalog Generator.pdb
+F:\Legacy\------笔记本-----\目录生成器\Catalog Generator\obj\Debug\Catalog Generator.csproj.AssemblyReference.cache

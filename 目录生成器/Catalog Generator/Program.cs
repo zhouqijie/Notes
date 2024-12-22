@@ -48,7 +48,7 @@ namespace Catalog_Generator
         {
             foreach(var file in dir.GetFiles())
             {
-                if(file.Name.Contains("--目录--"))
+                if(file.Name.Contains("__Catalog__"))
                 {
                     File.Delete(file.FullName);
                     Console.WriteLine("已删除目录：" + file.FullName);
@@ -73,9 +73,9 @@ namespace Catalog_Generator
             //文件名  
             string catalogName;
             if (isRoot == false)
-                catalogName = "--目录--" + dir.Name + ".md";
+                catalogName = "__Catalog__" + dir.Name + ".md";
             else
-                catalogName = "--目录--root.md";
+                catalogName = "__Catalog__root.md";
             
             string catalogFullName = mapDir + "\\" + catalogName;
 
@@ -92,11 +92,11 @@ namespace Catalog_Generator
             {
                 if(dir.Parent.FullName == root.FullName)
                 {
-                    writer.WriteLine(ReplaceSeperator("[👈【返回】](/--目录--/--目录--root)  \n\n"));
+                    writer.WriteLine(ReplaceSeperator("[👈【返回】](/__Catalog__/__Catalog__root)  \n\n"));
                 }
                 else
                 {
-                    writer.WriteLine(ReplaceSeperator("[👈【返回】](" + ReplaceSeperator(GetRelativePath(MapToCatalogPath(dir.Parent)) + "\\--目录--" + dir.Parent.Name) + ")  \n\n"));
+                    writer.WriteLine(ReplaceSeperator("[👈【返回】](" + ReplaceSeperator(GetRelativePath(MapToCatalogPath(dir.Parent)) + "\\__Catalog__" + dir.Parent.Name) + ")  \n\n"));
                 }
             }
 
@@ -105,14 +105,14 @@ namespace Catalog_Generator
             // ITEM:  CHILD DIRS  
             foreach (var childDir in dir.GetDirectories())
             {
-                if (childDir.Name.Contains("目录")) continue;
+                if (childDir.Name.Contains("__Catalog__")) continue;
                 if (childDir.Name.Contains("Images")) continue;
                 if ((childDir.Attributes & FileAttributes.Hidden) == FileAttributes.Hidden) continue;
 
                 string dirName = childDir.Name; dirName = dirName.Replace(" ", " ");
                 string catalogDir = MapToCatalogPath(childDir); //Console.WriteLine("\ncatalogdir:" + catalogDir);
                 string relativeCatalogDir = GetRelativePath(catalogDir); //Console.WriteLine("\nrelativecatalogdir:" + relativeCatalogDir);
-                string relaPath = ReplaceSeperator(relativeCatalogDir + "\\--目录--" + dirName + "");//no ".md" extension in jekyll  
+                string relaPath = ReplaceSeperator(relativeCatalogDir + "\\__Catalog__" + dirName + "");//no ".md" extension in jekyll  
 
                 writer.WriteLine("[📁" + dirName + "](" + relaPath + ")  \n");
 
@@ -124,7 +124,7 @@ namespace Catalog_Generator
             // ITEM:  FILES  
             foreach (var f in dir.GetFiles())
             {
-                if (f.Name.Contains("--目录--")) continue;
+                if (f.Name.Contains("__Catalog__")) continue;
                 if (f.Name.Contains("index.md")) continue;
                 if ((f.Attributes & FileAttributes.Hidden) == FileAttributes.Hidden) continue;
 
@@ -171,11 +171,11 @@ namespace Catalog_Generator
 
             if (dir.FullName != root.FullName)
             {
-                return root.FullName + "\\--目录--" + relaPath; ;
+                return root.FullName + "\\__Catalog__" + relaPath; ;
             }
             else
             {
-                return root.FullName + "\\--目录--";
+                return root.FullName + "\\__Catalog__";
             }
         }
 
